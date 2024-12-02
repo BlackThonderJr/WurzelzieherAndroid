@@ -1,0 +1,117 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#282828">
+
+    <!-- Titel -->
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wurzelziehen-Rechner"
+        android:textColor="#DCDCDC"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Zahl-Eingabe -->
+    <EditText
+        android:id="@+id/numberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#3C3C3C"
+        android:hint="Zahl"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Schritte-Eingabe -->
+    <EditText
+        android:id="@+id/stepsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#3C3C3C"
+        android:hint="Schritte"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF" />
+
+    <!-- Ergebnis -->
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ERGEBNIS:"
+        android:textColor="#32CD32"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Rechnungsanzeige -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="#404040">
+
+        <TextView
+            android:id="@+id/calculationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:padding="8dp" />
+    </ScrollView>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="#1E90FF"
+        android:text="Rechnen"
+        android:textColor="#212121" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <CheckBox
+            android:id="@+id/helpCheckbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hilfe"
+            android:textColor="#DCDCDC" />
+
+        <CheckBox
+            android:id="@+id/moreHelpCheckbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Weitere Hilfe"
+            android:textColor="#DCDCDC" />
+    </LinearLayout>
+
+    <!-- Hinweis -->
+    <TextView
+        android:id="@+id/footerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Made by BlackThonder_Jr"
+        android:textColor="#DCDCDC"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
